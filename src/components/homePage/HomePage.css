@@ -1,0 +1,49 @@
+
+.container {
+    min-height: 100vh;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .underLine {
+    background-color: rgb(51, 50, 50);
+    margin-top: 20px;
+    width: 25%;
+    height: 4px;
+    border-radius: 20px;
+    animation: e 6s infinite;
+  }
+  
+  @keyframes e {
+    from {
+      width: 25%;
+    }
+    to {
+      width: 0%;
+    }
+  }
+  
+  .heading {
+    padding-top: 100px;
+    text-align: center;
+  }
+  
+  .challenges {
+    display: flex;
+    flex-wrap: wrap;
+    padding : 60px;
+    max-width: 950px;
+  }
+  
+  .challenge {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    margin: 20px;
+    cursor: pointer;
+    list-style: none;
+    text-decoration: none;
+    border-radius: 10px;
+  }
+  

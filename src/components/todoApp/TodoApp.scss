@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;400&display=swap");
+
+.todo-container {
+  background-color: hsl(235, 24%, 19%);
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 700;
+}
+
+.image-section {
+  background-image: url("../../assets/todo/images/bg-desktop-dark.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .todo-text {
+    color: white;
+    font-size: 30px;
+  }
+}
+
+.contentWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+}
+
+.add-section {
+  display: flex;
+  flex-direction: row;
+  background-color: hsl(237, 14%, 26%);
+  width: 360px;
+  height: 50px;
+  padding: 10px;
+  margin: 20px 0;
+  
+  .add-task-button {
+    margin-right:10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+// checkbox implementation
+  input[type="checkbox"]{
+    appearance: none;
+    cursor: pointer;
+    border: 1px solid hsl(152, 11%, 31%);
+    border-radius: 10px;
+    height: 20px;
+    width: 20px;
+//    to align with the check one
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  input[type="checkbox"]:checked::after{
+    content: "\2714";
+    color:white;
+    font-size: 14px;
+    border-radius: 10px;
+    background-image: linear-gradient(315deg, #f907fc 0%, #05d6d9 74%);
+    width: 20px;
+    height:20px;
+    text-align: center;
+}
+
+}
+
+.input-task {
+    
+    background-color: transparent;
+}
